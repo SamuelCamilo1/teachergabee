@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Inglês</title>
+    <link rel="stylesheet" href="css/css.css">
+    <!-- Links para fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho com imagem de fundo -->
+    <header class="welcome-header">
+        <img src="img/cabecalho.png" alt="Cabeçalho" class="header-image">
+    </header>
+
+    <div class="divisoria"></div>
+
+    <!-- Seção principal com imagem de fundo -->
+    <div class="background-container">
+        <img src="img/fundo.png" alt="Imagem de Fundo" class="background-image">
+        
+        <!-- Texto Principal -->
+        <div class="textprincipal">    
+            <h1>Procura aprender inglês de uma maneira didática e 100% personalizada de acordo com seus objetivos? Se sua resposta foi sim, você está no lugar certo!</h1>
+        </div> 
+        <div class="texto2">    
+            <h3>Me chamo Gabriela Penido, mais conhecida como teacher Gabee, minha história com o idioma começou no meu processo de alfabetização, quando completei 8 anos fui matriculada pelos meus pais em um curso de inglês, onde concluí e me formei no ano de 2022, logo no ano seguinte passei a procurar maneiras de trabalhar com o que eu amo, assim que passei no processo seletivo comecei a dar aulas para diferentes públicos e idades, onde tive experiência com crianças de 4 a 11 anos, adolescentes de 12 a 17 e adultos de 18 a 60 anos, no total pude participar do processo de aprendizagem de mais de 70 alunos e com isso tenho a certeza de que posso fazer do seu estudo de inglês o mais leve e objetivo possível!</h3>
+        </div>
+
+        <!-- Seções principais -->
+        <div class="main-content">
+            <div class="card" id="duvidas-frequentes" onclick="toggleContent('duvidas-frequentes-info')">
+                <h2>Dúvidas Frequentes</h2>
+                <p>Aqui você encontra respostas para as perguntas mais comuns.</p>
+                <div class="more-info" id="duvidas-frequentes-info">
+                    <h4>Como as aulas irão funcionar? </h4>
+                       <p> As aulas funcionam de maneira síncrona, ou seja, online e em tempo 
+                        real, possibilitando uma boa interação ente aluno e professor, garantindo 
+                        que as dúvidas sejam solucionadas em tempo real.. </p>
+                       
+                        <h4>Quais plataformas serão utilizadas para assistir às aulas e conferir minhas listas de exercícios e/ou materiais disponibilizados pela professora?</h4>
+                       <p> Para ter uma aula de qualidade, 100% online e segura, utilizaremos a 
+                        plataforma Google meet, para acessar o link da aula e os materiais basta 
+                        acessar outro aplicativo, o Google sala conhecido também como Google 
+                        classroom, para entrar na sala de aula você receberá um link e um código 
+                        onde poderá encontrar todas as informações necessárias, como o horário 
+                        da aula e atividades, caso alguma dúvida, entre em contato por meio do 
+                        número de telefone disponível no início. </p>
+
+                        <h4>Quais materias serão exigidos para que as aulas aconteçam? </h4>
+                       <p> A lista de materiais indispensáveis para fazer as aulas são; celular, tablet, 
+                        computadores que tenham acesso à internet para assistir às aulas, lápis, 
+                        borracha e caneta para realizar execícios e caderno como material de 
+                        apoio, algumas atividades poderão ser impressas ou caso o aluno desejar, 
+                        basta copiá-las em alguma folha, não se esqueça de manter o material 
+                        organizado para que o estudo seja completo! </p>
+
+                        <h4>Como posso agendar meus dias de aula e conferir a disponibilidade de 
+                            horários? </h4>
+                        <p> Para isso é simples, os dias de aula disponíveis são; segunda-feira, terça-
+                            feira e quinta-feira, com horários a partir das 16:30 da tarde, é importante 
+                            destacar que a agenda precisa ser fixa, ou seja, escolha um horário que 
+                            melhor se adeque a você! </p>
+
+                </div>
+            </div>
+            <div class="card" id="planos" onclick="toggleContent('planos-info')">
+                <h2>Planos e Pagamento</h2>
+                <p>Conheça nossos planos de estudo e escolha o melhor para você.</p>
+                <div class="more-info" id="planos-info">
+                    <h4>Como posso realizar o pagamento? Quais são os dias disponíveis para a 
+                        transferência do valor? </h4>
+                    <p> Os pagamentos podem ser feitos á partir do 4.º ao 6.º dia do mês, o que 
+                        deve ser definido antes do início das aulas para evitar qualquer tipo de 
+                        atraso, são realizados via PIX, a chave é a mesma do número de telefone: 
+                        11988206664. </p>
+
+                        <h4>Quais são os pacotes de aula disponíveis? </h4>
+                        <img src="img/pagamento.png" alt="Plano de Pagamento" class="plan-image">
+                        
+                        <h4>Terei férias? </h4>
+                        <p> As férias acontecem nos meses de julho, dezembro e janeiro, em julho 
+                            o valor das aulas não será cobrado justamente pelo fato delas não 
+                            acontecerem, diferente de dezembro e janeiro, nesses meses será cobrado metade do valor, dezembro as aulas iram até as duas primeiras semanas e voltam em janeiro nas duas ultimas, exemplo: um aluno que escolheu o pacote de uma hora de aula por semana, ao invés de realizar o valor inteiro (R$ 200,00), será cobrado metade, ou seja, R$ 100,00.
+                        </p>
+                </div>
+            </div>
+            <div class="card" id="informacoes-importantes" onclick="toggleContent('informacoes-importantes-info')">
+                <h2>Informações Importantes</h2>
+                <p>Leia as informações essenciais antes de começar o curso.</p>
+                <div class="more-info" id="informacoes-importantes-info">
+                    <h3>Aulas avulsas podem ser agendadas de acordo com a disponibilidade 
+                        da professora.</h3>
+                        <h3> Em caso de algum problema durante a aula ou antes mesmo dela acontecer por conta de algum imprevisto com a professora, o aluno nâo sairá no prejuizo e essa aula será feita em outro horario ou dia da preferência do aluno.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ícone de contato com WhatsApp -->
+    <footer class="contact-bar">
+        <a href="https://contate.me/teachergabee" target="_blank" class="contact-link">
+            <img src="img/zap.png" alt="WhatsApp">
+            <span>+55 11 98820-6664</span>
+        </a>
+    </footer>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
