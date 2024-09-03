@@ -1,5 +1,5 @@
 body {
-    font-family: 'Cagliostro', sans-serif; /* Aplicando a fonte importada */
+    font-family: 'Cagliostro', sans-serif; 
     background-color: #ffeea8;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     height: 250px;
     overflow: hidden;
     background-color: #fcc100;
-    border-bottom: 5px solid #fcc100; /* Ajustado para uma borda visível */
+    border-bottom: 5px solid #fcc100; 
 }
 
 .header-image {
@@ -25,7 +25,6 @@ body {
     background-color: #fcc100;
 }
 
-/* Container para a imagem de fundo */
 .background-container {
     position: relative;
 }
@@ -36,8 +35,8 @@ body {
     left: 0;
     width: 100%;
     height: auto;
-    z-index: -1; /* Envia a imagem para o fundo */
-    opacity: 0.5; /* Ajusta a opacidade para um efeito mais sutil, se necessário */
+    z-index: -1; 
+    opacity: 0.5; 
 }
 
 .textprincipal, .texto2 {
@@ -45,10 +44,10 @@ body {
     color: #b44333;
     text-align: center;
     padding: 20px;
-    background-color: rgba(255, 182, 193, 0.842); /* Rosa claro com transparência */
+    background-color: rgba(255, 182, 193, 0.842); 
     border-radius: 50px;
     margin: 20px auto;
-    max-width: 1100px; /* Ajuste o tamanho máximo conforme necessário */
+    max-width: 1100px; 
 }
 
 .main-content {
@@ -111,7 +110,6 @@ body {
     color: #666;
     transition: max-height 0.5s ease-in-out;
     overflow: hidden;
-    
 }
 
 .card.active .more-info {
@@ -119,7 +117,7 @@ body {
 }
 
 .plan-image {
-    max-width: 104%;
+    max-width: 100%;
     height: auto;
     margin-top: 15px; 
 }
@@ -158,4 +156,40 @@ body {
 
 .contact-bar.show {
     transform: translateY(0);
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .welcome-header {
+        height: 180px;
+    }
+
+    .textprincipal, .texto2 {
+        padding: 10px;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .contact-link span {
+        font-size: 12px;
+    }
+
+    .plan-image {
+        max-width: 100%;
+    }
+
+    .card::before, .card::after {
+        width: 20px;
+        height: 20px;
+    }
 }
